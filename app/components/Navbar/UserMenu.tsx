@@ -3,8 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 import MenuItem from "./MenuItem";
 import { AiOutlineMenu } from 'react-icons/ai'
+import { useRouter } from "next/navigation";
 
 const UserMenu = () => {
+    const router = useRouter();
     const [isOpen, setIsOpen] = useState(false);
     const menuRef = useRef<HTMLDivElement>(null);
 
@@ -34,10 +36,10 @@ const UserMenu = () => {
                 {isOpen && (
                     <div className="absolute right-0 top-12 w-[40vw] md:w-[20vw] bg-[#E8E8E8] rounded-xl shadow-md overflow-hidden text-sm">
                         <div className="flex flex-col cursor-pointer">
-                            <MenuItem label="Home" onClick={() => {}} />
-                            <MenuItem label="About" onClick={() => {}} />
-                            <MenuItem label="Projects" onClick={() => {}} />
-                            <MenuItem label="Contact" onClick={() => {}} />
+                            <MenuItem label="Home" onClick={() => router.push('/')} />
+                            <MenuItem label="About" onClick={() => router.push('/about')} />
+                            <MenuItem label="Projects" onClick={() => router.push('/projects')} />
+                            <MenuItem label="Contact" onClick={() => router.push('/contact')} />
                         </div>
                     </div>
                 )}

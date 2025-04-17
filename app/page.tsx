@@ -33,7 +33,7 @@ export default function Home() {
                 Landscaping
               </div>
           </Link>
-          <Link href={'/landscaping'}>
+          <Link href={'/paving'}>
             <div className={`bg-[url('/domestic_1.jpg')] w-[70vw] md:w-[60vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl
@@ -44,8 +44,8 @@ export default function Home() {
                 Paving
               </div>
           </Link>
-          <Link href={'/landscaping'}>
-            <div className={`bg-[url('/domestic_3.jpg')] w-[70vw] md:w-[60vw] md:h-[60vh] h-[40vh]
+          <Link href={'/patios'}>
+            <div className={`bg-[url('/dunshauglingazebo/IMG_5118.jpg')] w-[70vw] md:w-[60vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl
               flex items-center justify-center
@@ -55,8 +55,8 @@ export default function Home() {
                 Patios
               </div>
           </Link>
-          <Link href={'/landscaping'}>
-            <div className={`bg-[url('/domestic_3.jpg')] w-[70vw] md:w-[60vw] md:h-[60vh] h-[40vh]
+          <Link href={'/walling'}>
+            <div className={`bg-[url('/dunshauglingazebo/IMG_5107.jpg')] w-[70vw] md:w-[60vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl
               flex items-center justify-center
@@ -66,8 +66,8 @@ export default function Home() {
                 Walling
               </div>
           </Link>
-          <Link href={'/landscaping'}>
-            <div className={`bg-[url('/domestic_2.jpg')] w-[70vw] md:w-[60vw] md:h-[60vh] h-[40vh]
+          <Link href={'/gazebos'}>
+            <div className={`bg-[url('/dunshauglingazebo/IMG_5107.jpg')] w-[70vw] md:w-[60vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl
               flex items-center justify-center
@@ -77,7 +77,7 @@ export default function Home() {
                 Gazebos
               </div>
           </Link>
-          <Link href={'/landscaping'}>
+          <Link href={'/waterfeatures'}>
             <div className={`bg-[url('/waterfall.jpg')] w-[70vw] md:w-[60vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl

@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+html, body {
+    background-color: #E8E8E8;
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    font-family: 'Your Preferred Font', sans-serif; /* Optional, sets a global font */
+    min-height: 100%; /* Ensures the body covers the full height of the screen */
+}

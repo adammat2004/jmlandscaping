@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 const images = [
   '/waterfall.jpg',
   '/domestic_1.jpg',
+  '/mainImages/IMG_6073.jpg',
+  '/mainImages/IMG_4559.jpg'
 ];
 
 export default function ScrollingBackground() {
