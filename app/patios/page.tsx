@@ -12,18 +12,18 @@ const page = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pb-16">
           <div className="flex flex-col items-center text-center">
-            <Link href="/landscaping/gardenplanting" className="w-full">
+            <Link href="/patios/smallgardenpatio" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/landscaping1.jpg"
-                  alt="Garden Planting"
+                  src="/patio1/IMG-1734.jpg"
+                  alt="Small Garden Patio"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
-              Garden Planting
+              Townhouse Patio
             </div>
           </div>
           <div className="flex flex-col items-center text-center">

@@ -1,10 +1,11 @@
 import React from 'react'
 import Footer from '../components/Footer'
+import Image from 'next/image'
 
 const page = () => {
   return (
     <div className='bg-[#E8E8E8]] pt-72'>
-        <div className="bg-[#E8E8E8] px-6 md:px-16 min-h-screen">
+        <div className="bg-[#E8E8E8] px-6 md:px-16">
             <h1 className="text-4xl font-serif text-[#355E3B] mb-4">About Joe Matthews Landscaping</h1>
             <div className="text-xl text-gray-700 mb-8">
                 Established over two decades ago, Joe Matthews Landscaping & Paving has become a trusted name in landscape design and construction 
@@ -24,12 +25,20 @@ const page = () => {
             </div>
 
             <h1 className="text-4xl font-serif text-[#355E3B] mb-4">Why Choose Us</h1>
-            <div className="text-xl text-gray-700 mb-8">
+            <div className="text-xl text-gray-700 pb-8">
                 At Joe Matthews Landscaping & Paving, we pride ourselves on our professionalism, reliability, and attention to detail. 
                 We source high-quality materials from leading Irish and international manufacturers to ensure a superior finish for every project. 
                 Our fully qualified and insured team is dedicated to delivering results that exceed expectations, all while maintaining competitive pricing.
             </div>
         </div>
+        <Image 
+            src={'/About.jpg'}
+            alt='about us'
+            width={1600}
+            height={700}
+            className='w-full h-[100vh]'
+
+        />
         <Footer />
     </div>
   )
