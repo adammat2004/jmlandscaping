@@ -23,7 +23,7 @@ const page = () => {
           PATIO & GAZEBO / DUNSHAUGHLIN, MEATH
         </h1>
         <div className="text-lg md:text-xl text-gray-700">
-          .
+          A large patio and gazebo area we designed and built along with shrub beds around it.
         </div>
       </div>
 
