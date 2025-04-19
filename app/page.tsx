@@ -1,6 +1,12 @@
 import Link from "next/link";
 import ScrollingBackground from "./components/ScrollingBackground";
 import Footer from "./components/Footer";
+
+export const metadata = {
+  title: 'Joe Matthews Landscaping & Paving',
+  description: 'Joe Matthews Landscaping & Paving is a family-owned landscaping company based in Castletown, Co. Meath, Ireland. We specialize in landscape design and construction for both residential and commercial clients, offering services such as garden design, paving, patios, and more in Meath, Dublin, Cavan, Louth.',
+}
+
 export default function Home() {
   return (
     <div className="pt-32 bg-[#E8E8E8] flex flex-col items-center justify-center scroll-auto">
