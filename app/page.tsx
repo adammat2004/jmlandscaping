@@ -73,7 +73,7 @@ export default function Home() {
               </div>
           </Link>
           <Link href={'/gazebos'}>
-            <div className={`bg-[url('/dunshauglingazebo/IMG_5107.jpg')] w-[75vw] md:w-[70vw] md:h-[60vh] h-[40vh]
+            <div className={`bg-[url('/ourgazebo/IMG_8691.jpg')] w-[75vw] md:w-[70vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl
               flex items-center justify-center
