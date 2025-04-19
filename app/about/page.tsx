@@ -36,7 +36,7 @@ const page = () => {
             alt='about us'
             width={1600}
             height={700}
-            className='w-full h-[100vh]'
+            className='hidden md:w-full md:h-[100vh] md:block'
 
         />
         <Footer />
