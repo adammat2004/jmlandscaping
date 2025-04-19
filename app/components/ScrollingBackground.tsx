@@ -24,7 +24,7 @@ export default function ScrollingBackground() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // every 5 seconds
+    }, 3500); // every 5 seconds
 
     return () => clearInterval(interval);
   }, []);

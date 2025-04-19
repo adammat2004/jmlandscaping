@@ -57,10 +57,10 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/landscaping/1" className="w-full">
+            <Link href="/walling/patiowalling" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/landscaping1.jpg"
+                  src="/walling1/IMG-0148.jpg"
                   alt="Garden Planting"
                   fill
                   style={{ objectFit: 'cover' }}
@@ -68,7 +68,7 @@ const page = () => {
               </div>
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
-              Garden Planting
+              Patio with Walling
             </div>
           </div>
           <div className="flex flex-col items-center text-center">

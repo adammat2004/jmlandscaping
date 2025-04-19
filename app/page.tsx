@@ -29,7 +29,7 @@ export default function Home() {
         <h1 className="text-5xl md:text-5xl font-serif tracking-tight leading-tight text-gray-800">Our Services</h1>
         <div className="flex flex-col items-center justify-center mt-6 gap-8">
           <Link href={'/landscaping'}>
-            <div className={`bg-[url('/domestic_4.jpg')] md:w-[60vw] w-[70vw] md:h-[60vh] h-[40vh]
+            <div className={`bg-[url('/domestic_4.jpg')] md:w-[70vw] w-[75vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl
               flex items-center justify-center
@@ -40,7 +40,7 @@ export default function Home() {
               </div>
           </Link>
           <Link href={'/paving'}>
-            <div className={`bg-[url('/domestic_1.jpg')] w-[70vw] md:w-[60vw] md:h-[60vh] h-[40vh]
+            <div className={`bg-[url('/domestic_1.jpg')] w-[75vw] md:w-[70vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl
               flex items-center justify-center
@@ -51,7 +51,7 @@ export default function Home() {
               </div>
           </Link>
           <Link href={'/patios'}>
-            <div className={`bg-[url('/dunshauglingazebo/IMG_5118.jpg')] w-[70vw] md:w-[60vw] md:h-[60vh] h-[40vh]
+            <div className={`bg-[url('/dunshauglingazebo/IMG_5118.jpg')] w-[75vw] md:w-[70vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl
               flex items-center justify-center
@@ -62,7 +62,7 @@ export default function Home() {
               </div>
           </Link>
           <Link href={'/walling'}>
-            <div className={`bg-[url('/dunshauglingazebo/IMG_5107.jpg')] w-[70vw] md:w-[60vw] md:h-[60vh] h-[40vh]
+            <div className={`bg-[url('/dunshauglingazebo/IMG_5107.jpg')] w-[75vw] md:w-[70vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl
               flex items-center justify-center
@@ -73,7 +73,7 @@ export default function Home() {
               </div>
           </Link>
           <Link href={'/gazebos'}>
-            <div className={`bg-[url('/dunshauglingazebo/IMG_5107.jpg')] w-[70vw] md:w-[60vw] md:h-[60vh] h-[40vh]
+            <div className={`bg-[url('/dunshauglingazebo/IMG_5107.jpg')] w-[75vw] md:w-[70vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl
               flex items-center justify-center
@@ -84,7 +84,7 @@ export default function Home() {
               </div>
           </Link>
           <Link href={'/waterfeatures'}>
-            <div className={`bg-[url('/waterfall.jpg')] w-[70vw] md:w-[60vw] md:h-[60vh] h-[40vh]
+            <div className={`bg-[url('/waterfall.jpg')] w-[75vw] md:w-[70vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl
               flex items-center justify-center

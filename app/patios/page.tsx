@@ -27,7 +27,7 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/landscaping/1" className="w-full">
+            <Link href="/patios/patiogazebo" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/dunshauglingazebo/IMG_5112.jpg"
@@ -42,48 +42,48 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/landscaping/1" className="w-full">
+            <Link href="/patios/circularpatio" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/landscaping1.jpg"
-                  alt="Garden Planting"
+                  src="/patio3/IMG_8576.jpg"
+                  alt="patio"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
-              Garden Planting
+              Circular Patio
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/landscaping/1" className="w-full">
+            <Link href="/patios/patiosteps" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/landscaping1.jpg"
-                  alt="Garden Planting"
+                  src="/patio4/IMG_8075.jpg"
+                  alt="steps"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
-              Garden Planting
+              Patio & Steps
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/landscaping/1" className="w-full">
+            <Link href="/patios/limestonepatio" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/landscaping1.jpg"
-                  alt="Garden Planting"
+                  src="/patio5/IMG_7905.jpg"
+                  alt="limestone"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
-              Garden Planting
+              Limestone Patio
             </div>
           </div>
         </div>

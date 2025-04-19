@@ -12,18 +12,18 @@ const page = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pb-16">
           <div className="flex flex-col items-center text-center">
-            <Link href="/landscaping/gardenplanting" className="w-full">
+            <Link href="/paving/pavedgarden" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/landscaping1.jpg"
-                  alt="Garden Planting"
+                  src="/paving1/IMG_7696.jpg"
+                  alt="paving 1"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
-              Garden Planting
+              Paved Back Garden
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
@@ -72,10 +72,10 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/landscaping/1" className="w-full">
+            <Link href="/paving/pavedgarden" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/landscaping1.jpg"
+                  src="/paving1/IMG_7696.jpg"
                   alt="Garden Planting"
                   fill
                   style={{ objectFit: 'cover' }}
@@ -83,7 +83,7 @@ const page = () => {
               </div>
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
-              Garden Planting
+              Paved Back Garden
             </div>
           </div>
         </div>

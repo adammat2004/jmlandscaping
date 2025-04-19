@@ -22,7 +22,7 @@ const page = () => {
         <h1 className="text-3xl md:text-4xl font-serif text-[#355E3B] mb-4">
           PAVED GAZEBO / DONORE, MEATH
         </h1>
-        <div className="text-lg md:text-xl text-gray-700">
+        <div className="text-lg md:text-xl text-gray-700 pl-16 pr-16">
           A paved gazebo built for use and an outdoor bbq and sitting area.
         </div>
       </div>

@@ -22,7 +22,7 @@ const page = () => {
         <h1 className="text-3xl md:text-4xl font-serif text-[#355E3B] mb-4">
           GAZEBO SPA / CASTLETOWN, MEATH
         </h1>
-        <div className="text-lg md:text-xl text-gray-700">
+        <div className="text-lg md:text-xl text-gray-700 pl-16 pr-16">
           A Gazebo built to be used as a BBQ and spa area. All construction of the gazebo was completed by us along with the paving, walling and landscaping around it.
         </div>
       </div>
