@@ -28,7 +28,7 @@ const UserMenu = () => {
     }, []);
 
     return (
-        <div className="md:hidden bg-[#E8E8E8]">
+        <div className="sm:hidden bg-[#E8E8E8]">
             <div className="relative" ref={menuRef}>
                 <div onClick={toggleOpen} className="flex items-center gap-3 cursor-pointer p-4 border-[1px] border-neutral-200 rounded-full shadow-sm hover:shadow-md transition">
                     <AiOutlineMenu size={20} />
