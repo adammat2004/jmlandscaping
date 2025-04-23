@@ -2,6 +2,12 @@ import React from 'react'
 import Footer from '../components/Footer'
 import Image from 'next/image'
 
+export const metadata = {
+    title: 'About Joe Matthews Landscaping & Paving',
+    description: 'Learn about Joe Matthews Landscaping, a trusted landscaping business serving Meath, Dublin, and Louth. With years of experience in landscaping, we provide professional, high-quality services like patios, garden design, and more.',
+  }
+  
+
 const page = () => {
   return (
     <div className='bg-[#E8E8E8]] pt-72'>

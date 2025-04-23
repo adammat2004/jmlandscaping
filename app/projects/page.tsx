@@ -2,6 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '../components/Footer';
 
+export const metadata = {
+  title: 'Our Landscaping Projects | Joe Matthews Landscaping',
+  description: 'Explore real landscaping projects by Joe Matthews Landscaping across Meath, Dublin, and Louth. See our patios, driveways, garden designs, and water features — quality craftsmanship and attention to detail in every project.',
+}
+
+
 const page = () => {
   return (
     <div>

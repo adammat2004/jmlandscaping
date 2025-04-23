@@ -2,6 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '../components/Footer';
 
+export const metadata = {
+  title: 'Water Features & Garden Ponds | Joe Matthews Landscaping',
+  description: 'Create a tranquil garden with custom water features, including ponds, waterfalls, and streams. Serving Meath, Dublin, and Louth, Joe Matthews Landscaping designs and installs stunning water elements that enhance any outdoor space.',
+}
+
+
 const page = () => {
   return (
     <div>

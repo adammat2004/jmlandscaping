@@ -7,27 +7,12 @@ import LogoImage from './Image'
 const Navbar = () => {
   return (
     <div className='absolute w-full bg-[#E8E8E8] z-10 shadow-sm'>
-      <div className='px-4'>
-        <div className='flex items-center justify-between lg:pt-6'>
-
-          {/* Left: Logo (hidden on small screens) */}
-          <div className='hidden lg:block'>
-            <Logo />
-          </div>
-
-          {/* Center: LogoImage (always visible, centered using flex-1) */}
-          <div className='flex-1 flex justify-center'>
-            <LogoImage />
-          </div>
-
-          {/* Right: UserMenu always visible, NavLinks hidden on small screens */}
-          <div className='flex items-center gap-4'>
-            <div className='hidden md:flex'>
-              <NavLinks />
-            </div>
-            <UserMenu />
-          </div>
-
+      <div className='pl-4 pr-4'> 
+        <div className='flex flex-row items-center justify-between gap-3 md:gap-0 lg:pt-6'>
+          <Logo />
+          <LogoImage />
+          <NavLinks />
+          <UserMenu />
         </div>
       </div>
     </div>

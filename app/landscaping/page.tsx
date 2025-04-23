@@ -2,6 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '../components/Footer';
 
+export const metadata = {
+  title: 'Landscaping Services | Joe Matthews Landscaping',
+  description: 'Transform your outdoor space with professional landscaping services across Meath, Dublin, and Louth. From garden design to full landscape construction, Joe Matthews Landscaping delivers stunning, functional results tailored to your needs.',
+}
+
+
 const page = () => {
   return (
     <div>

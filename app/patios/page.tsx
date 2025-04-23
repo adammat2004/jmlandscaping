@@ -2,6 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '../components/Footer';
 
+export const metadata = {
+  title: 'Patio Design & Installation | Joe Matthews Landscaping',
+  description: 'Expert patio design and installation services across Meath, Dublin, and Louth. Joe Matthews Landscaping delivers bespoke patios using high-quality materials, tailored to your outdoor living needs.',
+}
+
+
 const page = () => {
   return (
     <div>

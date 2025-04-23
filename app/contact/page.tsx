@@ -2,6 +2,12 @@
 
 import { useState } from 'react';
 
+export const metadata = {
+  title: 'Contact Joe Matthews Landscaping & Paving',
+  description: 'Get in touch with Joe Matthews Landscaping for expert landscaping services in Meath, Dublin, Westmeath, Cavan and Louth. Reach out for a free consultation on patios, driveways, garden design, and more. We’re here to help!'
+}
+
+
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     firstName: '',

@@ -89,7 +89,7 @@ export default function Home() {
               rounded-3xl
               flex items-center justify-center
               text-white text-5xl font-bold
-              hover:opacity-90 transition-all duration-500
+              hover:opacity-90 transition-all duration-500 text-center
               shadow-2xl`}>
                 Water Features
               </div>

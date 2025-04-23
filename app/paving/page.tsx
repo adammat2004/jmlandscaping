@@ -2,6 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '../components/Footer';
 
+export const metadata = {
+  title: 'Paving Services in Meath, Dublin & Louth | Joe Matthews Landscaping',
+  description: 'Expert paving services for driveways, patios, and gardens across Meath, Dublin, and Louth. Joe Matthews Landscaping delivers durable, high-quality paving using top materials and precision craftsmanship.',
+}
+
+
 const page = () => {
   return (
     <div>
