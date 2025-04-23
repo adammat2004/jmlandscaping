@@ -1,30 +1,31 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 const images = [
-  '/waterfall.jpg',
-  '/domestic_1.jpg',
-  '/mainImages/IMG_6073.jpg',
-  '/mainImages/IMG_4559.jpg'
+  '/mainImages/mainimage3.webp',
+  '/mainImages/mainimage4.webp',
+  '/mainImages/mainimage.webp',
+  '/mainImages/mainimage2.webp'
 ];
 
 export default function ScrollingBackground() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Preload all images once on mount
+  // Preload all images on mount
   useEffect(() => {
     images.forEach((src) => {
-      const img = new Image();
+      const img = new window.Image();
       img.src = src;
     });
   }, []);
 
-  // Set up the interval for image swapping
+  // Swap image every 3.5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3500); // every 5 seconds
+    }, 3500);
 
     return () => clearInterval(interval);
   }, []);
@@ -32,12 +33,15 @@ export default function ScrollingBackground() {
   return (
     <div className="relative h-screen w-full overflow-hidden">
       {images.map((src, i) => (
-        <img
+        <Image
           key={i}
           src={src}
           alt=""
+          fill
+          sizes="100vw"
+          priority={i === 0}
           className={`
-            absolute top-0 left-0 w-full h-full object-cover 
+            object-cover absolute top-0 left-0 
             transition-opacity duration-1000 ease-in-out
             ${i === currentImageIndex ? 'opacity-100' : 'opacity-0'}
           `}
