@@ -30,7 +30,7 @@ const page = () => {
       {/* Two Images Side-by-Side (inside same width as singles) */}
       <div className="flex justify-center mb-12">
         <div className="w-[80%] flex flex-wrap gap-4">
-          <div className="w-full md:w-[49%] rounded-xl overflow-hidden shadow-md">
+          <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/paving3/IMG-1020.jpg"
               alt="Path"
@@ -39,7 +39,7 @@ const page = () => {
               className="rounded-xl object-cover w-full h-auto"
             />
           </div>
-          <div className="w-full md:w-[49%] rounded-xl overflow-hidden shadow-md">
+          <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/paving3/IMG-1021.jpg"
               alt="Patio"
@@ -53,7 +53,7 @@ const page = () => {
 
       <div className="flex justify-center mb-12">
         <div className="w-[80%] flex flex-wrap gap-4">
-          <div className="w-full md:w-[49%] rounded-xl overflow-hidden shadow-md">
+          <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/paving3/IMG-1022.jpg"
               alt="Path"
@@ -62,7 +62,7 @@ const page = () => {
               className="rounded-xl object-cover w-full h-auto"
             />
           </div>
-          <div className="w-full md:w-[49%] rounded-xl overflow-hidden shadow-md">
+          <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/paving3/IMG-1024.jpg"
               alt="Patio"
@@ -75,7 +75,7 @@ const page = () => {
       </div>
       <div className="flex justify-center mb-12">
         <div className="w-[80%] flex flex-wrap gap-4">
-          <div className="w-full md:w-[49%] rounded-xl overflow-hidden shadow-md">
+          <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/paving3/IMG-1025.jpg"
               alt="Path"
@@ -84,7 +84,7 @@ const page = () => {
               className="rounded-xl object-cover w-full h-auto"
             />
           </div>
-          <div className="w-full md:w-[49%] rounded-xl overflow-hidden shadow-md">
+          <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/paving3/IMG-1027.jpg"
               alt="Patio"

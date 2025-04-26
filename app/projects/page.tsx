@@ -33,10 +33,25 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
+            <Link href="/waterfeatures/tranquilpond" className="w-full">
+              <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                <Image
+                  src="/waterfall2/mainimage.jpg"
+                  alt="Patio and Gazebo"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </Link>
+            <div className="mt-4 text-lg text-[#355E3B] font-medium">
+              Tranquil Pond
+            </div>
+          </div>
+          <div className="flex flex-col items-center text-center">
             <Link href="/gazebos/gazebopatio" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/dunshauglingazebo/IMG_5112.jpg"
+                  src="/dunshauglingazebo/IMG_5118.jpg"
                   alt="Patio and Gazebo"
                   fill
                   style={{ objectFit: 'cover' }}
@@ -48,10 +63,42 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
+            <Link href="/gazebos/parkbeo" className="w-full">
+              <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                <Image
+                  src="/parkbeo/IMG-5746.jpg"
+                  alt="gazebo"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className='object-center'
+                />
+              </div>
+            </Link>
+            <div className="mt-4 text-lg text-[#355E3B] font-medium">
+              Park Beo
+            </div>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <Link href="/waterfeatures/naturalpond" className="w-full">
+              <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                <Image
+                  src="/waterfall1/IMG-1965.jpg"
+                  alt="Garden Planting"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className=''
+                />
+              </div>
+            </Link>
+            <div className="mt-4 text-lg text-[#355E3B] font-medium">
+              Pond & Patio
+            </div>
+          </div>
+          <div className="flex flex-col items-center text-center">
             <Link href="/gazebos/bbqarea" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/gazebo3/IMG-7496.jpg"
+                  src="/gazebo3/IMG-7632.jpg"
                   alt="gazebo"
                   fill
                   style={{ objectFit: 'cover' }}
@@ -63,20 +110,22 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/patios/smallgardenpatio" className="w-full">
+            <Link href="/landscaping/moderngarden" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/patio1/IMG-1734.jpg"
-                  alt="Small Garden Patio"
+                  src="/donaghpatrick/IMG-2039.jpg"
+                  alt="Garden Planting"
                   fill
                   style={{ objectFit: 'cover' }}
+                  className='object-center'
                 />
               </div>
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
-              Townhouse Patio
+              Modern Garden
             </div>
           </div>
+
           <div className="flex flex-col items-center text-center">
             <Link href="/patios/circularpatio" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
@@ -90,6 +139,21 @@ const page = () => {
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
               Circular Patio
+            </div>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <Link href="/landscaping/commercial2" className="w-full">
+              <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                <Image
+                  src="/landscaping2/frontimage.jpg"
+                  alt="Garden Planting"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </Link>
+            <div className="mt-4 text-lg text-[#355E3B] font-medium">
+              Commercial Planting & Paving
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
@@ -120,6 +184,67 @@ const page = () => {
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
               Limestone Patio
+            </div>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <Link href="/landscaping/commerciallandscaping" className="w-full">
+              <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                <Image
+                  src="/paving2/IMG-4669.jpg"
+                  alt="commercial paving"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </Link>
+            <div className="mt-4 text-lg text-[#355E3B] font-medium">
+              Commerial Landscaping Project
+            </div>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <Link href="/paving/circlepaving" className="w-full">
+              <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                <Image
+                  src="/paving3/frontimage.jpg"
+                  alt="Paved Circular Back Garden"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </Link>
+            <div className="mt-4 text-lg text-[#355E3B] font-medium">
+              Circular Paving
+            </div>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <Link href="/walling/fencedwalling" className="w-full">
+              <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                <Image
+                  src="/walling2/IMG-1259.jpg"
+                  alt="Garden Planting"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className='object-top'
+                />
+              </div>
+            </Link>
+            <div className="mt-4 text-lg text-[#355E3B] font-medium">
+              Walling & Fencing
+            </div>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <Link href="/patios/smallgardenpatio" className="w-full">
+              <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                <Image
+                  src="/patio1/IMG-1734.jpg"
+                  alt="Small Garden Patio"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </Link>
+            <div className="mt-4 text-lg text-[#355E3B] font-medium">
+              Townhouse Patio
             </div>
           </div>
         </div>

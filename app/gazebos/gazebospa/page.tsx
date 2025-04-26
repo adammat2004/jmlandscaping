@@ -85,7 +85,7 @@ const page = () => {
             alt="Planting"
             width={1200}
             height={500}
-            className="rounded-xl object-cover w-full h-[150vh]"
+            className="rounded-xl object-cover w-full h-[110vh] object-top"
           />
         </div>
       </div>

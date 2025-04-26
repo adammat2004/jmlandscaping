@@ -5,9 +5,10 @@ import { useEffect, useState } from 'react';
 
 const images = [
   '/mainImages/mainimage3.webp',
-  '/mainImages/mainimage4.webp',
+  '/dunshauglingazebo/IMG_5118.jpg',
   '/mainImages/mainimage.webp',
-  '/mainImages/mainimage2.webp'
+  '/mainImages/mainimage2.webp',
+  '/mainImages/mainimage4.webp',
 ];
 
 export default function ScrollingBackground() {

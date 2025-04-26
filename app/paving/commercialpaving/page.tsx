@@ -42,7 +42,7 @@ const page = () => {
       {/* Two Images Side-by-Side (inside same width as singles) */}
       <div className="flex justify-center mb-12">
         <div className="w-[80%] flex flex-wrap gap-4">
-          <div className="w-full md:w-[49%] rounded-xl overflow-hidden shadow-md">
+          <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/paving2/IMG-4668.jpg"
               alt="Path"
@@ -51,7 +51,7 @@ const page = () => {
               className="rounded-xl object-cover w-full h-auto"
             />
           </div>
-          <div className="w-full md:w-[49%] rounded-xl overflow-hidden shadow-md">
+          <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/paving2/IMG-4671.jpg"
               alt="Patio"
@@ -71,7 +71,7 @@ const page = () => {
 
       <div className="flex justify-center mb-12">
         <div className="w-[80%] flex flex-wrap gap-4">
-          <div className="w-full md:w-[49%] rounded-xl overflow-hidden shadow-md">
+          <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/paving2/IMG-2712.jpg"
               alt="Path"
@@ -80,7 +80,7 @@ const page = () => {
               className="rounded-xl object-cover w-full h-auto"
             />
           </div>
-          <div className="w-full md:w-[49%] rounded-xl overflow-hidden shadow-md">
+          <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/paving2/IMG-2723.jpg"
               alt="Patio"

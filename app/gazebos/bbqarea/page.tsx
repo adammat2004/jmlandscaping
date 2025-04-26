@@ -8,11 +8,11 @@ const page = () => {
       <div className="flex justify-center mb-12">
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/gazebo3/IMG-7496.jpg"
+            src="/gazebo3/IMG-7632.jpg"
             alt="Main image"
             width={1600}
             height={700}
-            className="rounded-xl object-cover w-full h-[150vh]"
+            className="rounded-xl object-cover w-full h-auto"
           />
         </div>
       </div>

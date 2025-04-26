@@ -50,16 +50,32 @@ const page = () => {
             <Link href="/gazebos/bbqarea" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/gazebo3/IMG-7496.jpg"
+                  src="/gazebo3/IMG-7632.jpg"
                   alt="gazebo"
                   fill
                   style={{ objectFit: 'cover' }}
-                  className=''
+                  className='object-cover'
                 />
               </div>
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
               Paved BBQ Area
+            </div>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <Link href="/gazebos/parkbeo" className="w-full">
+              <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                <Image
+                  src="/parkbeo/IMG-5746.jpg"
+                  alt="gazebo"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className='object-center'
+                />
+              </div>
+            </Link>
+            <div className="mt-4 text-lg text-[#355E3B] font-medium">
+              Park Beo
             </div>
           </div>
         </div>

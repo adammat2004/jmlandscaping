@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="pt-32 bg-[#E8E8E8] flex flex-col items-center justify-center scroll-auto">
       <ScrollingBackground />
-      <div className="px-6 md:px-36 py-12 flex flex-col justify-center w-[80%]">
+      <div className="px-6 md:px-36 py-12 flex flex-col justify-center lg:w-[80%]">
         <h1 className="text-4xl md:text-5xl font-serif tracking-tight leading-tight text-gray-800 max-w-4xl mb-8">
           We are a Garden Design/Build Company
         </h1>
