@@ -81,7 +81,7 @@ export default function ContactForm() {
           </p>
           <div>
             <p className="text-xl text-gray-600 font-serif mb-2">Phone: <strong className='text-teal-800'>087 2504960</strong></p>
-            <p className="text-xl text-gray-600 font-serif mb-2">Email: <strong className='text-teal-800'>info@jmlandscaping.ie</strong></p>
+            <p className="text-xl text-gray-600 font-serif mb-2">Email: <strong className='text-teal-800'>info@jmatthewslandscaping.ie</strong></p>
           </div>
         </div>
 

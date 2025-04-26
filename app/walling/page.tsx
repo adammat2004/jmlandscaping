@@ -18,18 +18,19 @@ const page = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pb-16">
           <div className="flex flex-col items-center text-center">
-            <Link href="/landscaping/gardenplanting" className="w-full">
+            <Link href="/walling/fencedwalling" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/landscaping1.jpg"
+                  src="/walling2/IMG-1259.jpg"
                   alt="Garden Planting"
                   fill
                   style={{ objectFit: 'cover' }}
+                  className='object-top'
                 />
               </div>
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
-              Garden Planting
+              Walling & Fencing
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
@@ -40,6 +41,7 @@ const page = () => {
                   alt="Patio and Gazebo"
                   fill
                   style={{ objectFit: 'cover' }}
+                  className=''
                 />
               </div>
             </Link>

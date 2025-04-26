@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="pt-32 bg-[#E8E8E8] flex flex-col items-center justify-center scroll-auto">
       <ScrollingBackground />
-      <div className="px-6 md:px-36 py-12 flex flex-col justify-center">
+      <div className="px-6 md:px-36 py-12 flex flex-col justify-center w-[80%]">
         <h1 className="text-4xl md:text-5xl font-serif tracking-tight leading-tight text-gray-800 max-w-4xl mb-8">
           We are a Garden Design/Build Company
         </h1>
@@ -40,7 +40,7 @@ export default function Home() {
               </div>
           </Link>
           <Link href={'/paving'}>
-            <div className={`bg-[url('/domestic_1.jpg')] w-[75vw] md:w-[70vw] md:h-[60vh] h-[40vh]
+            <div className={`bg-[url('/mainImages/mainpaving.jpg')] w-[75vw] md:w-[70vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl
               flex items-center justify-center
