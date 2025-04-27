@@ -48,6 +48,21 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
+            <Link href="/paving/gardenpath" className="w-full">
+              <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                <Image
+                  src="/paving5/mainimage.jpg"
+                  alt="Garden Path"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </Link>
+            <div className="mt-4 text-lg text-[#355E3B] font-medium">
+              Garden Path
+            </div>
+          </div>
+          <div className="flex flex-col items-center text-center">
             <Link href="/paving/pavingsteps" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
