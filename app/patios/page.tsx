@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'Patio Design & Installation | Joe Matthews Landscaping',
+  title: 'Patio Design & Installation | Joe Matthews Landscaping & Paving',
   description: 'Expert patio design and installation services across Meath, Dublin, and Louth. Joe Matthews Landscaping delivers bespoke patios using high-quality materials, tailored to your outdoor living needs.',
 }
 

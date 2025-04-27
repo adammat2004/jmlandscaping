@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'Our Landscaping Projects | Joe Matthews Landscaping',
+  title: 'Our Projects | Joe Matthews Landscaping & Paving',
   description: 'Explore real landscaping projects by Joe Matthews Landscaping across Meath, Dublin, and Louth. See our patios, driveways, garden designs, and water features — quality craftsmanship and attention to detail in every project.',
 }
 

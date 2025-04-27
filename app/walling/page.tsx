@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'Garden Walling Services in Meath, Dublin & Louth | Joe Matthews Landscaping',
+  title: 'Garden Walling | Joe Matthews Landscaping & Paving',
   description: 'Professional walling services for garden walls, retaining walls, and boundary walls in Meath, Dublin, and Louth. Joe Matthews Landscaping creates durable, beautifully crafted walls to enhance your outdoor spaces.',
 }
 
