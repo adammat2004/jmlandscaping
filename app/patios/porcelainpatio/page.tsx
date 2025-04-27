@@ -20,10 +20,10 @@ const page = () => {
       {/* Title and Description */}
       <div className="text-center mb-12 px-4">
         <h1 className="text-3xl md:text-4xl font-serif text-[#355E3B] mb-4">
-          LIMESTONE PATIO / NAVAN, MEATH
+          PORCELAIN PATIO / NAVAN, MEATH
         </h1>
         <div className="text-lg md:text-xl text-gray-700">
-          A limestone patio with kerbing around it and roll out grass lawn. 
+          A porcelein patio with kerbing around it and roll out grass lawn. 
         </div>
       </div>
 

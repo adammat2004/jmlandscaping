@@ -23,7 +23,7 @@ const page = () => {
           CIRCULAR PATIO / KELLS, MEATH
         </h1>
         <div className="text-lg md:text-xl text-gray-700">
-          A circular granite patio surrounded by pebbled shrub peds and planting.
+          A circular granite patio surrounded by pebbled shrub beds and planting.
         </div>
       </div>
 
