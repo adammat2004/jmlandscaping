@@ -89,7 +89,7 @@ const page = () => {
               </div>
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
-              Limestone Patio
+              Porcelain Patio
             </div>
           </div>
         </div>
