@@ -18,7 +18,7 @@ const page = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pb-16">
           <div className="flex flex-col items-center text-center">
-            <Link href="/patios/smallgardenpatio" className="w-full">
+            <Link href="/patios/granite-patio-louth" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/patio1/IMG-1734.jpg"
@@ -33,7 +33,7 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/patios/patiogazebo" className="w-full">
+            <Link href="/patios/patio-gazebo-meath" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/dunshauglingazebo/IMG_5112.jpg"
@@ -48,7 +48,7 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/patios/circularpatio" className="w-full">
+            <Link href="/patios/granite-patio-meath" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/patio3/IMG_8576.jpg"
@@ -63,11 +63,11 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/patios/patiosteps" className="w-full">
+            <Link href="/patios/granite-patio-dublin" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/patio4/IMG_8075.jpg"
-                  alt="steps"
+                  alt="granite patio and granite steps in Dublin"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
@@ -78,11 +78,11 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/patios/porcelainpatio" className="w-full">
+            <Link href="/patios/porcelain-patio-meath" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/patio5/IMG_7905.jpg"
-                  alt="limestone"
+                  alt="porcelain patio in Meath"
                   fill
                   style={{ objectFit: 'cover' }}
                 />

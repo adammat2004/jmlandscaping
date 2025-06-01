@@ -63,11 +63,11 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/gazebos/gazebopatio" className="w-full">
+            <Link href="/gazebos/custom-gazebo-meath" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/dunshauglingazebo/IMG_5118.jpg"
-                  alt="Patio and Gazebo"
+                  alt="Patio and custom made gazebo in Meath"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
@@ -142,7 +142,7 @@ const page = () => {
           </div>
 
           <div className="flex flex-col items-center text-center">
-            <Link href="/patios/circularpatio" className="w-full">
+            <Link href="/patios/granite-patio-meath" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/patio3/IMG_8576.jpg"
@@ -172,7 +172,7 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/patios/patiosteps" className="w-full">
+            <Link href="/patios/granite-patio-dublin" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/patio4/IMG_8075.jpg"
@@ -187,7 +187,7 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/patios/porcelainpatio" className="w-full">
+            <Link href="/patios/porcelain-patio-meath" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/patio5/IMG_7905.jpg"

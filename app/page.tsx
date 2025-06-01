@@ -26,7 +26,7 @@ export default function Home() {
       </div>
       <Link href={'/full-service-landscaping-paving-meath'}>
         <div className={`bg-[url('/newjob/pic_2.jpg')] flex items-top md:items-center justify-center w-[75vw] md:w-[70vw] md:h-[60vh] h-[40vh] bg-cover bg-[position:80%_50%] text-center rounded-xl shadow-2xl mb-12`}>
-            <h1 className="pt-8 md:pt-0 font-serif md:text-5xl text-4xl text-white font-bold">View Our Most Recent Project</h1>
+            <h1 className="pt-8 md:pt-0 font-serif md:text-5xl text-4xl text-white font-bold">View Our Latest Project</h1>
         </div>
       </Link>
 

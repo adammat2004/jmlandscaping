@@ -22,8 +22,8 @@ const page = () => {
         <h1 className="text-3xl md:text-4xl font-serif text-[#355E3B] mb-4">
           PATIO & GAZEBO / DUNSHAUGHLIN, MEATH
         </h1>
-        <div className="text-lg md:text-xl text-gray-700 pl-16 pr-16">
-          A large patio and gazebo area we designed and built along with shrub beds around it.
+        <div className="text-lg md:text-xl text-gray-700">
+          We designed and built a large granite patio and custom timber gazebo for this garden in Meath. The project also included surrounding shrub beds for a natural finish and improved outdoor flow.
         </div>
       </div>
 
@@ -89,51 +89,9 @@ const page = () => {
           />
         </div>
       </div>
-
-      {/* Title and Description */}
-      <div className="text-center mb-12 px-4">
-        <h1 className="text-3xl md:text-4xl font-serif text-[#355E3B] mb-4">
-          PROGRESS PICTURES
-        </h1>
-      </div>
-
-      <div className="flex justify-center mb-12">
-        <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
-          <Image
-            src="/dunshauglingazebo/IMG-4718.jpg"
-            alt="Planting"
-            width={1200}
-            height={500}
-            className="rounded-xl object-cover w-full h-auto"
-          />
-        </div>
-      </div>
-
-      <div className="flex justify-center mb-12">
-        <div className="w-[80%] flex flex-wrap gap-4">
-          <div className="w-full lg:w-[49%] rounded-xl overflow-hidden shadow-md mx-auto">
-            <Image
-              src="/dunshauglingazebo/IMG-4864.jpg"
-              alt="Path"
-              width={600}
-              height={400}
-              className="rounded-xl object-cover w-full h-auto"
-            />
-          </div>
-          <div className="w-full lg:w-[49%] rounded-xl overflow-hidden shadow-md mx-auto">
-            <Image
-              src="/dunshauglingazebo/IMG-4783.jpg"
-              alt="Patio"
-              width={600}
-              height={400}
-              className="rounded-xl object-cover w-full h-auto"
-            />
-          </div>
-        </div>
-      </div>
-
     </div>
   );
 };
 
 export default page;
+
