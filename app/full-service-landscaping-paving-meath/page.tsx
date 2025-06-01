@@ -7,7 +7,7 @@ const page = () => {
       <div className="flex justify-center mb-12">
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/newjob/pic2.jpg"
+            src="/newjob/pic_2.jpg"
             alt="Main image"
             width={1600}
             height={700}
@@ -25,7 +25,7 @@ const page = () => {
       </div>
       <div>
         <video
-          src={"/newjob/waterfallvid.mp4"}
+          src={"/newjob/waterfall_vid.mp4"}
           controls
           autoPlay
           loop
@@ -37,7 +37,7 @@ const page = () => {
       <div className="flex justify-center mb-12">
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/newjob/pic9.jpg"
+            src="/newjob/pic_9.jpg"
             alt="Main image"
             width={1600}
             height={700}
@@ -48,7 +48,7 @@ const page = () => {
       <div className="flex justify-center mb-12">
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/newjob/pic4.jpg"
+            src="/newjob/pic_4.jpg"
             alt="Main image"
             width={1600}
             height={700}
@@ -59,7 +59,7 @@ const page = () => {
       <div className="flex justify-center mb-12">
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/newjob/pic5.jpg"
+            src="/newjob/pic_5.jpg"
             alt="Main image"
             width={1600}
             height={700}
@@ -70,7 +70,7 @@ const page = () => {
       <div className="flex justify-center mb-12">
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/newjob/pic7.jpg"
+            src="/newjob/pic_7.jpg"
             alt="Main image"
             width={1600}
             height={700}
@@ -81,7 +81,7 @@ const page = () => {
       <div className="flex justify-center mb-12">
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/newjob/pic1.jpg"
+            src="/newjob/pic_1.jpg"
             alt="Main image"
             width={1600}
             height={700}
@@ -92,7 +92,7 @@ const page = () => {
       <div className="flex justify-center mb-12">
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
-            src="/newjob/pic3.jpg"
+            src="/newjob/pic_3.jpg"
             alt="Main image"
             width={1600}
             height={700}

@@ -21,7 +21,7 @@ const page = () => {
             <Link href="/full-service-landscaping-paving-meath" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/newjob/pic2.jpg"
+                  src="/newjob/pic_2.jpg"
                   alt="Landscaping and Paving Project"
                   fill
                   style={{ objectFit: 'cover' }}
