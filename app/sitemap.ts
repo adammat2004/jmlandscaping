@@ -46,5 +46,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/waterfeatures`,
       lastModified: new Date(),
     },
+    {
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/full-service-landscaping-paving-meath`,
+      lastModified: new Date(),
+    },
   ];
 }

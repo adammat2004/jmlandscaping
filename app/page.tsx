@@ -24,6 +24,11 @@ export default function Home() {
           From intimate urban courtyards to expansive rural estates, our team approaches each project with sensitivity to its context and a passion for craftsmanship. Whether you're dreaming of a serene garden retreat, a welcoming front path, or a custom stone patio, Joe Matthews Landscaping & Paving blends natural beauty with functional design to elevate outdoor living across Ireland.
         </div>
       </div>
+      <Link href={'/full-service-landscaping-paving-meath'}>
+        <div className={`bg-[url('/newjob/pic2.jpg')] flex items-top md:items-center justify-center w-[75vw] md:w-[70vw] md:h-[60vh] h-[40vh] bg-cover bg-[position:80%_50%] text-center rounded-xl shadow-2xl mb-12`}>
+            <h1 className="pt-8 md:pt-0 font-serif md:text-5xl text-4xl text-white font-bold">View Our Most Recent Project</h1>
+        </div>
+      </Link>
 
       <div className="flex flex-col items-center justify-between pb-6">
         <h1 className="text-5xl md:text-5xl font-serif tracking-tight leading-tight text-gray-800">Our Services</h1>

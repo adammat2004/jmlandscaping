@@ -18,6 +18,21 @@ const page = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pb-16">
         <div className="flex flex-col items-center text-center">
+            <Link href="/full-service-landscaping-paving-meath" className="w-full">
+              <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
+                <Image
+                  src="/newjob/pic2.jpg"
+                  alt="Landscaping and Paving Project"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </Link>
+            <div className="mt-4 text-lg text-[#355E3B] font-medium">
+              Full Outdoor Transformation
+            </div>
+          </div>
+        <div className="flex flex-col items-center text-center">
             <Link href="/gazebos/gazebospa" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
