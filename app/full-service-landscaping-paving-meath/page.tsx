@@ -11,7 +11,7 @@ const page = () => {
             alt="Main image"
             width={1600}
             height={700}
-            className="rounded-xl object-cover w-full h-auto"
+            className="rounded-xl object-cover w-full md:h-auto h-[40vh]"
           />
         </div>
       </div>
@@ -19,7 +19,7 @@ const page = () => {
         <h1 className="text-3xl md:text-4xl font-serif text-[#355E3B] mb-4">
           COMPLETE OUTDOOR TRANSFORMATION / COLLINSTOWN, WESTMEATH
         </h1>
-        <div className="text-xl md:text-xl text-gray-700 pl-16 pr-16 md:w-[75%]">
+        <div className="md:text-xl text-lg text-gray-700 pl-16 pr-16 md:w-[75%]">
           We recently completed a full landscaping and paving transformation for this stunning countryside property. The project included a natural stone waterfall, tiered garden beds, a granite patio area at the side of the house, paving at the front and back of the property and a walled circular patio beside the water feature brings structure and elegance to the space, while carefully placed planting areas soften the layout. Lawns, kerbing and front entrance paving were also completed to enhance the overall aesthetic and functionality of the property.  
         </div>
       </div>
@@ -29,7 +29,7 @@ const page = () => {
           controls
           autoPlay
           loop
-          className="w-[80%] mx-auto rounded-xl shadow-md mb-12"
+          className="w-[80%] mx-auto rounded-xl shadow-md mb-12 md:h-auto h-[40vh] object-cover"
         >
 
         </video>
@@ -41,7 +41,7 @@ const page = () => {
             alt="Main image"
             width={1600}
             height={700}
-            className="rounded-xl object-cover w-full h-auto"
+            className="rounded-xl object-cover w-full md:h-auto h-[40vh]"
           />
         </div>
       </div>
@@ -52,7 +52,7 @@ const page = () => {
             alt="Main image"
             width={1600}
             height={700}
-            className="rounded-xl object-cover w-full h-auto"
+            className="rounded-xl object-cover w-full md:h-auto h-[40vh]"
           />
         </div>
       </div>
@@ -63,7 +63,7 @@ const page = () => {
             alt="Main image"
             width={1600}
             height={700}
-            className="rounded-xl object-cover w-full h-auto"
+            className="rounded-xl object-cover w-full md:h-auto h-[40vh]"
           />
         </div>
       </div>
@@ -74,7 +74,7 @@ const page = () => {
             alt="Main image"
             width={1600}
             height={700}
-            className="rounded-xl object-cover w-full h-auto"
+            className="rounded-xl object-cover w-full md:h-auto h-[40vh]"
           />
         </div>
       </div>
@@ -85,7 +85,7 @@ const page = () => {
             alt="Main image"
             width={1600}
             height={700}
-            className="rounded-xl object-cover w-full h-auto"
+            className="rounded-xl object-cover w-full md:h-auto h-[40vh]"
           />
         </div>
       </div>
@@ -96,7 +96,7 @@ const page = () => {
             alt="Main image"
             width={1600}
             height={700}
-            className="rounded-xl object-cover w-full h-auto"
+            className="rounded-xl object-cover w-full md:h-auto h-[40vh]"
           />
         </div>
       </div>
