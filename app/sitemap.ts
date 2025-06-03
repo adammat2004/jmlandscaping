@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/landscaping`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/landscaping-services`,
       lastModified: new Date(),
     },
     {
@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/patios`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/garden-patios`,
       lastModified: new Date(),
     },
     {

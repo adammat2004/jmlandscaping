@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'Patio Design & Installation | Joe Matthews Landscaping & Paving',
-  description: 'Expert patio design and installation services across Meath, Dublin, and Louth. Joe Matthews Landscaping delivers bespoke patios using high-quality materials, tailored to your outdoor living needs.',
+  title: 'Landscaping Services | Joe Matthews Landscaping & Paving',
+  description: 'Transform your outdoor space with professional garden landscaping services across Meath, Dublin, and Louth. From garden design to full landscape construction, Joe Matthews Landscaping delivers stunning, functional results tailored to your needs.',
 }
 
 
@@ -18,22 +18,22 @@ const page = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pb-16">
           <div className="flex flex-col items-center text-center">
-            <Link href="/patios/granite-patio-louth" className="w-full">
+            <Link href="/landscaping-services/commerciallandscaping" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/patio1/IMG-1734.jpg"
-                  alt="Small Garden Patio"
+                  src="/paving2/IMG-4669.jpg"
+                  alt="commercial paving"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
-              Townhouse Patio
+              Commerial Landscaping Project
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/patios/patio-gazebo-meath" className="w-full">
+            <Link href="/landscaping-services/patiogazebo" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/dunshauglingazebo/IMG_5112.jpg"
@@ -48,48 +48,34 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/patios/granite-patio-meath" className="w-full">
+            <Link href="/landscaping-services/commercial2" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/patio3/IMG_8576.jpg"
-                  alt="patio"
+                  src="/landscaping2/frontimage.jpg"
+                  alt="Garden Planting"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
-              Circular Patio
+              Commercial Planting & Paving
             </div>
           </div>
           <div className="flex flex-col items-center text-center">
-            <Link href="/patios/granite-patio-dublin" className="w-full">
+            <Link href="/landscaping-services/moderngarden" className="w-full">
               <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/patio4/IMG_8075.jpg"
-                  alt="granite patio and granite steps in Dublin"
+                  src="/donaghpatrick/IMG-2039.jpg"
+                  alt="Garden Planting"
                   fill
                   style={{ objectFit: 'cover' }}
+                  className='object-center'
                 />
               </div>
             </Link>
             <div className="mt-4 text-lg text-[#355E3B] font-medium">
-              Patio & Steps
-            </div>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <Link href="/patios/porcelain-patio-meath" className="w-full">
-              <div className="relative w-full aspect-[2/1] rounded-xl overflow-hidden shadow-md hover:scale-105 transition-transform duration-300">
-                <Image
-                  src="/patio5/IMG_7905.jpg"
-                  alt="porcelain patio in Meath"
-                  fill
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
-            </Link>
-            <div className="mt-4 text-lg text-[#355E3B] font-medium">
-              Porcelain Patio
+              Modern Garden
             </div>
           </div>
         </div>

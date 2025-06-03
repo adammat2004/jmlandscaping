@@ -33,7 +33,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-between pb-6">
         <h1 className="text-5xl md:text-5xl font-serif tracking-tight leading-tight text-gray-800">Our Services</h1>
         <div className="flex flex-col items-center justify-center mt-6 gap-8">
-          <Link href={'/landscaping'}>
+          <Link href={'/landscaping-services'}>
             <div className={`bg-[url('/domestic_4.jpg')] md:w-[70vw] w-[75vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl
@@ -55,7 +55,7 @@ export default function Home() {
                 Paving
               </div>
           </Link>
-          <Link href={'/patios'}>
+          <Link href={'/garden-patios'}>
             <div className={`bg-[url('/dunshauglingazebo/IMG_5118.jpg')] w-[75vw] md:w-[70vw] md:h-[60vh] h-[40vh]
               bg-cover bg-center
               rounded-3xl
