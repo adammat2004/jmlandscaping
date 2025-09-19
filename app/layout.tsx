@@ -14,10 +14,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Joe Matthews Landscaping",	
-  description: "We provide landscaping services in Leinster",
-};
 
 export default function RootLayout({
   children,

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'Gazebo Design & Installation | Joe Matthews Landscaping & Paving',
+  title: 'Custom Gazebo Design & Installation | Joe Matthews Landscaping & Paving',
   description: 'Explore our stunning gazebo projects, including BBQ areas and outdoor spa designs. We design and build custom gazebos across Dublin, Meath & Louth to enhance your outdoor living space.',
 }
 

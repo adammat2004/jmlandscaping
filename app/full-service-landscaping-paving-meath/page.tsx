@@ -1,5 +1,11 @@
 import Image from "next/image"
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Complete Outdoor Transformation | Joe Matthews Landscaping & Paving",
+  description:
+    "Full landscaping & paving project in Collinstown, Westmeath. Featuring a stone waterfall, granite patio, tiered garden beds, paving, circular patio, lawns & more.",
+};
 const page = () => {
   return (
     <div className="pt-72 bg-[#E8E8E8] pb-16">

@@ -15,10 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/patios`,
-      lastModified: new Date(),
-    },
-    {
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/garden-patios`,
       lastModified: new Date(),
     },
