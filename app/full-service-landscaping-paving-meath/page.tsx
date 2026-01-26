@@ -23,7 +23,6 @@ export const metadata: Metadata = {
     canonical: `${baseUrl}/full-service-landscaping-paving-meath`,
   },
 };
-
 const page = () => {
   return (
     <div className="pt-72 bg-[#E8E8E8] pb-16">
