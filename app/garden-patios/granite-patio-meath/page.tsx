@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Circular Granite Patio Project | Kells, Meath',
+  description: 'Circular granite patio surrounded by pebbled shrub beds and planting in Kells, Meath. Expert patio design and installation services across Meath, Dublin, and Louth.',
+  openGraph: {
+    title: 'Circular Granite Patio Project | Kells, Meath',
+    description: 'Circular granite patio with pebbled shrub beds and planting completed in Kells, Meath.',
+    url: `${baseUrl}/garden-patios/granite-patio-meath`,
+    images: [
+      {
+        url: `${baseUrl}/patio3/IMG_8576.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Circular granite patio project in Kells, Meath',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/garden-patios/granite-patio-meath`,
+  },
+};
 
 const page = () => {
   return (
@@ -9,7 +33,7 @@ const page = () => {
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
             src="/patio3/IMG_8576.jpg"
-            alt="Main image"
+            alt="Circular granite patio surrounded by pebbled shrub beds in Kells, Meath"
             width={1600}
             height={700}
             className="rounded-xl object-cover w-full h-auto"
@@ -32,7 +56,7 @@ const page = () => {
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
             src="/patio3/IMG_8580.jpg"
-            alt="Gazebo"
+            alt="Circular granite patio with surrounding planting in Kells, Meath"
             width={1200}
             height={500}
             className="rounded-xl object-cover w-full h-auto"
@@ -46,7 +70,7 @@ const page = () => {
           <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/patio3/IMG_8577.jpg"
-              alt="Path"
+              alt="Granite patio detail showing pebbled shrub bed border in Kells, Meath"
               width={600}
               height={400}
               className="rounded-xl object-cover w-full h-auto"
@@ -55,7 +79,7 @@ const page = () => {
           <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/patio3/IMG_8578.jpg"
-              alt="Patio"
+              alt="Circular granite patio installation detail in Kells, Meath"
               width={600}
               height={400}
               className="rounded-xl object-cover w-full h-auto"
@@ -68,7 +92,7 @@ const page = () => {
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
             src="/patio3/IMG_8575.jpg"
-            alt="Planting"
+            alt="Garden planting and shrub beds around circular granite patio in Kells, Meath"
             width={1200}
             height={500}
             className="rounded-xl object-cover w-full h-[100vh]"

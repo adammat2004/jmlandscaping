@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Pond & Patio Project | Carlanstown, Meath',
+  description: 'Patio with walling and steps complete with a pond in Carlanstown, Meath. Expert water feature and patio installation services across Meath, Dublin, and Louth.',
+  openGraph: {
+    title: 'Pond & Patio Project | Carlanstown, Meath',
+    description: 'Patio with walling and steps complete with a pond completed in Carlanstown, Meath.',
+    url: `${baseUrl}/waterfeatures/naturalpond`,
+    images: [
+      {
+        url: `${baseUrl}/waterfall1/IMG-1965.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Pond and patio project in Carlanstown, Meath',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/waterfeatures/naturalpond`,
+  },
+};
 
 const page = () => {
   return (

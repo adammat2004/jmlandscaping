@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Commercial Paving & Landscaping Project | Inchicore, Dublin',
+  description: 'Commercial paving and landscaping project at large apartment development in Inchicore, Dublin. Professional commercial landscaping services across Dublin, Meath, and Louth.',
+  openGraph: {
+    title: 'Commercial Paving & Landscaping Project | Inchicore, Dublin',
+    description: 'Commercial paving and landscaping project completed at large apartment development in Inchicore, Dublin.',
+    url: `${baseUrl}/landscaping-services/commercial2`,
+    images: [
+      {
+        url: `${baseUrl}/landscaping2/frontimage.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Commercial paving and landscaping project in Inchicore, Dublin',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/landscaping-services/commercial2`,
+  },
+};
 
 const page = () => {
   return (

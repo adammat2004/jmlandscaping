@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Custom Patio & Gazebo Project | Dunshaughlin, Meath',
+  description: 'Large granite patio and custom timber gazebo with surrounding shrub beds in Dunshaughlin, Meath. Professional patio and gazebo design services across Meath, Dublin, and Louth.',
+  openGraph: {
+    title: 'Custom Patio & Gazebo Project | Dunshaughlin, Meath',
+    description: 'Large granite patio and custom timber gazebo with surrounding shrub beds completed in Dunshaughlin, Meath.',
+    url: `${baseUrl}/gazebos/custom-gazebo-meath`,
+    images: [
+      {
+        url: `${baseUrl}/dunshauglingazebo/IMG_5111(1).jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Custom patio and gazebo project in Dunshaughlin, Meath',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/gazebos/custom-gazebo-meath`,
+  },
+};
 
 const page = () => {
   return (

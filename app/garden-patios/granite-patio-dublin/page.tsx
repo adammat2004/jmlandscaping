@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Granite Patio & Steps Project | Tallaght, Dublin',
+  description: 'Granite patio and steps with new fencing in Tallaght, Dublin. Professional patio and step installation services across Dublin, Meath, and Louth.',
+  openGraph: {
+    title: 'Granite Patio & Steps Project | Tallaght, Dublin',
+    description: 'Granite patio and steps with new fencing completed in Tallaght, Dublin.',
+    url: `${baseUrl}/garden-patios/granite-patio-dublin`,
+    images: [
+      {
+        url: `${baseUrl}/patio4/IMG_8075.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Granite patio and steps project in Tallaght, Dublin',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/garden-patios/granite-patio-dublin`,
+  },
+};
 
 const page = () => {
   return (

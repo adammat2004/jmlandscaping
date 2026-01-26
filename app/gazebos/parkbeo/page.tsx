@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Park Beo Gazebo Project | Wilkinstown, Meath',
+  description: 'Gazebo seating area construction at Park Beo in Wilkinstown, Meath. Professional gazebo construction services across Meath, Dublin, and Louth.',
+  openGraph: {
+    title: 'Park Beo Gazebo Project | Wilkinstown, Meath',
+    description: 'Gazebo seating area construction completed at Park Beo in Wilkinstown, Meath.',
+    url: `${baseUrl}/gazebos/parkbeo`,
+    images: [
+      {
+        url: `${baseUrl}/parkbeo/IMG-5566.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Park Beo gazebo project in Wilkinstown, Meath',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/gazebos/parkbeo`,
+  },
+};
 
 const page = () => {
   return (

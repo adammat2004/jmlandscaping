@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Sandstone Waterfall Feature Project | Castletown, Meath',
+  description: 'Sandstone water feature with landscaping around it in Castletown, Meath. Professional water feature design and installation services across Meath, Dublin, and Louth.',
+  openGraph: {
+    title: 'Sandstone Waterfall Feature Project | Castletown, Meath',
+    description: 'Sandstone water feature with landscaping completed in Castletown, Meath.',
+    url: `${baseUrl}/waterfeatures/tranquilpond`,
+    images: [
+      {
+        url: `${baseUrl}/waterfall2/mainimage.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Sandstone waterfall feature project in Castletown, Meath',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/waterfeatures/tranquilpond`,
+  },
+};
 
 const page = () => {
   return (

@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Paving & Granite Steps Project | Navan, Meath',
+  description: 'Backyard paving project with granite steps leading to lawn area in Navan, Meath. Expert paving and step installation services across Meath, Dublin, and Louth.',
+  openGraph: {
+    title: 'Paving & Granite Steps Project | Navan, Meath',
+    description: 'Backyard paving with granite steps project completed in Navan, Meath. Professional paving and step installation.',
+    url: `${baseUrl}/paving/pavingsteps`,
+    images: [
+      {
+        url: `${baseUrl}/paving4/frontimage.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Paving and granite steps project in Navan, Meath',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/paving/pavingsteps`,
+  },
+};
 
 const page = () => {
   return (

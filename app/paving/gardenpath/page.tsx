@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Garden Path & Patio Project | Wilkinstown, Meath',
+  description: 'Garden path leading to paved patio area with walling and planting in Wilkinstown, Meath. Professional garden path and patio installation services across Meath, Dublin, and Louth.',
+  openGraph: {
+    title: 'Garden Path & Patio Project | Wilkinstown, Meath',
+    description: 'Garden path and paved patio project with walling and planting completed in Wilkinstown, Meath.',
+    url: `${baseUrl}/paving/gardenpath`,
+    images: [
+      {
+        url: `${baseUrl}/paving5/mainimage.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Garden path and patio project in Wilkinstown, Meath',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/paving/gardenpath`,
+  },
+};
 
 const page = () => {
   return (

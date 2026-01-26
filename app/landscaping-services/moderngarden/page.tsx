@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Modern Garden Patio & Landscaping Project | Donaghpatrick, Meath',
+  description: 'Modern garden patio and landscaping project at large modern home in Donaghpatrick, Meath. Professional garden design and landscaping services across Meath, Dublin, and Louth.',
+  openGraph: {
+    title: 'Modern Garden Patio & Landscaping Project | Donaghpatrick, Meath',
+    description: 'Modern garden patio and landscaping project completed at large modern home in Donaghpatrick, Meath.',
+    url: `${baseUrl}/landscaping-services/moderngarden`,
+    images: [
+      {
+        url: `${baseUrl}/donaghpatrick/IMG-2039.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Modern garden patio and landscaping project in Donaghpatrick, Meath',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/landscaping-services/moderngarden`,
+  },
+};
 
 const page = () => {
   return (

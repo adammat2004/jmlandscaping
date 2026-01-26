@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Limestone Patio & Walling Project | Clonee, Dublin',
+  description: 'Limestone patio and walling project in Clonee, Dublin. Professional patio and walling services across Dublin, Meath, and Louth.',
+  openGraph: {
+    title: 'Limestone Patio & Walling Project | Clonee, Dublin',
+    description: 'Limestone patio and walling project completed in Clonee, Dublin.',
+    url: `${baseUrl}/walling/patiowalling`,
+    images: [
+      {
+        url: `${baseUrl}/walling1/IMG-0148.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Limestone patio and walling project in Clonee, Dublin',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/walling/patiowalling`,
+  },
+};
 
 const page = () => {
   return (

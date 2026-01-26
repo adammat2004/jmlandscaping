@@ -1,4 +1,28 @@
 import Image from "next/image"
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Complete Outdoor Transformation | Collinstown, Westmeath',
+  description: 'Full landscaping and paving transformation including natural stone waterfall, tiered garden beds, granite patio, paving, walled circular patio, lawns, and kerbing in Collinstown, Westmeath. Expert full-service landscaping across Westmeath, Meath, Dublin, and Louth.',
+  openGraph: {
+    title: 'Complete Outdoor Transformation | Collinstown, Westmeath',
+    description: 'Full landscaping and paving transformation with natural stone waterfall, tiered garden beds, granite patio, and more completed in Collinstown, Westmeath.',
+    url: `${baseUrl}/full-service-landscaping-paving-meath`,
+    images: [
+      {
+        url: `${baseUrl}/newjob/pic_2.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Complete outdoor transformation project in Collinstown, Westmeath',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/full-service-landscaping-paving-meath`,
+  },
+};
 
 const page = () => {
   return (
@@ -8,7 +32,7 @@ const page = () => {
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
             src="/newjob/pic_2.jpg"
-            alt="Main image"
+            alt="Complete outdoor transformation with natural stone waterfall and landscaping in Collinstown, Westmeath"
             width={1600}
             height={700}
             className="rounded-xl object-cover w-full md:h-auto h-[40vh]"
@@ -38,7 +62,7 @@ const page = () => {
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
             src="/newjob/pic_9.jpg"
-            alt="Main image"
+            alt="Granite patio and tiered garden beds at complete outdoor transformation in Collinstown, Westmeath"
             width={1600}
             height={700}
             className="rounded-xl object-cover w-full md:h-auto h-[40vh]"
@@ -49,7 +73,7 @@ const page = () => {
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
             src="/newjob/pic_4.jpg"
-            alt="Main image"
+            alt="Natural stone waterfall feature with landscaping in Collinstown, Westmeath"
             width={1600}
             height={700}
             className="rounded-xl object-cover w-full md:h-auto h-[40vh]"
@@ -60,7 +84,7 @@ const page = () => {
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
             src="/newjob/pic_5.jpg"
-            alt="Main image"
+            alt="Walled circular patio and water feature landscaping in Collinstown, Westmeath"
             width={1600}
             height={700}
             className="rounded-xl object-cover w-full md:h-auto h-[40vh]"
@@ -71,7 +95,7 @@ const page = () => {
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
             src="/newjob/pic_7.jpg"
-            alt="Main image"
+            alt="Front entrance paving and landscaping at complete outdoor transformation in Collinstown, Westmeath"
             width={1600}
             height={700}
             className="rounded-xl object-cover w-full md:h-auto h-[40vh]"
@@ -82,7 +106,7 @@ const page = () => {
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
             src="/newjob/pic_1.jpg"
-            alt="Main image"
+            alt="Lawns and kerbing at complete outdoor transformation project in Collinstown, Westmeath"
             width={1600}
             height={700}
             className="rounded-xl object-cover w-full md:h-auto h-[40vh]"
@@ -93,7 +117,7 @@ const page = () => {
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
             src="/newjob/pic_3.jpg"
-            alt="Main image"
+            alt="Back garden paving and landscaping at complete outdoor transformation in Collinstown, Westmeath"
             width={1600}
             height={700}
             className="rounded-xl object-cover w-full md:h-auto h-[40vh]"

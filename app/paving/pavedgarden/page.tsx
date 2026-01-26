@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Paving & Walling Project | Johnstown, Meath',
+  description: 'Back garden paving and walling project with shrub beds in Johnstown, Meath. Professional paving and walling services across Meath, Dublin, and Louth.',
+  openGraph: {
+    title: 'Paving & Walling Project | Johnstown, Meath',
+    description: 'Back garden paving and walling project with shrub beds completed in Johnstown, Meath.',
+    url: `${baseUrl}/paving/pavedgarden`,
+    images: [
+      {
+        url: `${baseUrl}/paving1/IMG_7696.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Paving and walling project in Johnstown, Meath',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/paving/pavedgarden`,
+  },
+};
 
 const page = () => {
   return (

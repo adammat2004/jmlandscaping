@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Paved Gazebo & BBQ Area Project | Donore, Meath',
+  description: 'Paved gazebo built for outdoor BBQ and sitting area in Donore, Meath. Expert gazebo and paving services across Meath, Dublin, and Louth.',
+  openGraph: {
+    title: 'Paved Gazebo & BBQ Area Project | Donore, Meath',
+    description: 'Paved gazebo for outdoor BBQ and sitting area completed in Donore, Meath.',
+    url: `${baseUrl}/gazebos/bbqarea`,
+    images: [
+      {
+        url: `${baseUrl}/gazebo3/IMG-7632.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Paved gazebo and BBQ area project in Donore, Meath',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/gazebos/bbqarea`,
+  },
+};
 
 const page = () => {
   return (

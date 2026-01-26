@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Townhouse Patio & Planting Project | Drogheda, Louth',
+  description: 'Townhouse back garden completed with granite slabs, walling and planting in Drogheda, Louth. Expert patio and garden design services across Louth, Meath, and Dublin.',
+  openGraph: {
+    title: 'Townhouse Patio & Planting Project | Drogheda, Louth',
+    description: 'Townhouse back garden with granite slabs, walling and planting completed in Drogheda, Louth.',
+    url: `${baseUrl}/garden-patios/granite-patio-louth`,
+    images: [
+      {
+        url: `${baseUrl}/patio1/IMG-1737.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Townhouse patio and planting project in Drogheda, Louth',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/garden-patios/granite-patio-louth`,
+  },
+};
 
 const page = () => {
   return (

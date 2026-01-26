@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Fencing & Walling Project | Cortown, Meath',
+  description: 'Walling and fencing project replacing hedge with walling, fencing and hedging in Cortown, Meath. Expert walling and fencing services across Meath, Dublin, and Louth.',
+  openGraph: {
+    title: 'Fencing & Walling Project | Cortown, Meath',
+    description: 'Walling and fencing project replacing hedge completed in Cortown, Meath.',
+    url: `${baseUrl}/walling/fencedwalling`,
+    images: [
+      {
+        url: `${baseUrl}/walling2/IMG-1259.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Fencing and walling project in Cortown, Meath',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/walling/fencedwalling`,
+  },
+};
 
 const page = () => {
   return (

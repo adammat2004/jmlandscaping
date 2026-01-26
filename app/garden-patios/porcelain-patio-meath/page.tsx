@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Porcelain Patio Project | Navan, Meath',
+  description: 'Porcelain patio with kerbing and roll out grass lawn in Navan, Meath. Expert porcelain patio installation services across Meath, Dublin, and Louth.',
+  openGraph: {
+    title: 'Porcelain Patio Project | Navan, Meath',
+    description: 'Porcelain patio with kerbing and roll out grass lawn completed in Navan, Meath.',
+    url: `${baseUrl}/garden-patios/porcelain-patio-meath`,
+    images: [
+      {
+        url: `${baseUrl}/patio5/IMG_7905.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Porcelain patio project in Navan, Meath',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/garden-patios/porcelain-patio-meath`,
+  },
+};
 
 const page = () => {
   return (

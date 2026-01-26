@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Circular Paving Project | Castletown, Meath',
+  description: 'Beautiful circular paving project with walled seating area in Castletown, Meath. Expert paving services for backyards and outdoor spaces across Meath, Dublin, and Louth.',
+  openGraph: {
+    title: 'Circular Paving Project | Castletown, Meath',
+    description: 'Circular paving project with walled seating area completed in Castletown, Meath. Professional backyard paving services.',
+    url: `${baseUrl}/paving/circlepaving`,
+    images: [
+      {
+        url: `${baseUrl}/paving3/frontimage.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Circular paving project with walled seating area in Castletown, Meath',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/paving/circlepaving`,
+  },
+};
 
 const page = () => {
   return (

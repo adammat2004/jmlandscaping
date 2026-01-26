@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Commercial Paving & Landscaping Project | Clonsilla, Dublin',
+  description: 'Commercial paving and landscaping project at large apartment development in Clonsilla, Dublin. Professional commercial landscaping services across Dublin, Meath, and Louth.',
+  openGraph: {
+    title: 'Commercial Paving & Landscaping Project | Clonsilla, Dublin',
+    description: 'Commercial paving and landscaping project completed at large apartment development in Clonsilla, Dublin.',
+    url: `${baseUrl}/landscaping-services/commerciallandscaping`,
+    images: [
+      {
+        url: `${baseUrl}/paving2/IMG-4669.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Commercial paving and landscaping project in Clonsilla, Dublin',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/landscaping-services/commerciallandscaping`,
+  },
+};
 
 const page = () => {
   return (

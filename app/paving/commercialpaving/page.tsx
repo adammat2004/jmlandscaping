@@ -1,5 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joematthewslandscaping.com';
+
+export const metadata: Metadata = {
+  title: 'Commercial Paving & Landscaping Project | Clonsilla, Dublin',
+  description: 'View our commercial paving and landscaping project at a large apartment development in Clonsilla, Dublin. Professional paving services for commercial properties across Dublin, Meath, and Louth.',
+  openGraph: {
+    title: 'Commercial Paving & Landscaping Project | Clonsilla, Dublin',
+    description: 'Professional commercial paving and landscaping services completed at a large apartment development in Clonsilla, Dublin.',
+    url: `${baseUrl}/paving/commercialpaving`,
+    images: [
+      {
+        url: `${baseUrl}/paving2/IMG-4669.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Commercial paving and landscaping project in Clonsilla, Dublin',
+      },
+    ],
+  },
+  alternates: {
+    canonical: `${baseUrl}/paving/commercialpaving`,
+  },
+};
 
 const page = () => {
   return (
@@ -9,7 +33,7 @@ const page = () => {
         <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
           <Image
             src="/paving2/IMG-4669.jpg"
-            alt="Main image"
+            alt="Commercial paving and landscaping project at apartment development in Clonsilla, Dublin"
             width={1600}
             height={700}
             className="rounded-xl object-cover w-full h-[150vh]"
@@ -31,7 +55,7 @@ const page = () => {
             <div className="w-[80%] rounded-xl overflow-hidden shadow-md">
                 <Image
                 src="/mainImages/IMG_6073.jpg"
-                alt="Main image"
+                alt="Commercial paving installation at apartment development in Clonsilla, Dublin"
                 width={1600}
                 height={700}
                 className="rounded-xl object-cover w-full h-auto"
@@ -45,7 +69,7 @@ const page = () => {
           <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/paving2/IMG-4668.jpg"
-              alt="Path"
+              alt="Paved garden path at commercial landscaping project in Clonsilla, Dublin"
               width={600}
               height={400}
               className="rounded-xl object-cover w-full h-auto"
@@ -54,7 +78,7 @@ const page = () => {
           <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/paving2/IMG-4671.jpg"
-              alt="Patio"
+              alt="Commercial patio paving installation in Clonsilla, Dublin"
               width={600}
               height={400}
               className="rounded-xl object-cover w-full h-auto"
@@ -74,7 +98,7 @@ const page = () => {
           <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/paving2/IMG-2712.jpg"
-              alt="Path"
+              alt="Paving progress photo showing garden path installation in Clonsilla, Dublin"
               width={600}
               height={400}
               className="rounded-xl object-cover w-full h-auto"
@@ -83,7 +107,7 @@ const page = () => {
           <div className="w-full mx-auto lg:w-[49%] rounded-xl overflow-hidden shadow-md">
             <Image
               src="/paving2/IMG-2723.jpg"
-              alt="Patio"
+              alt="Paving progress photo showing patio installation in Clonsilla, Dublin"
               width={600}
               height={400}
               className="rounded-xl object-cover w-full h-auto"
