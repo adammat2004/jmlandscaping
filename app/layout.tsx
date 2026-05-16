@@ -105,6 +105,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Analytics />
+        <script src="https://www.tradeez.ie/widget-loader.js" data-key="wk_OnWcrYgKxo24z2CJpa9cr5Y6LqQvKmrO"></script>
       </body>
     </html>
   );
