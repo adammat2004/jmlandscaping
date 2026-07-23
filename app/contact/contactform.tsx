@@ -1,25 +1,31 @@
-'use client'
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
+import Button from "../components/ui/Button";
+import Footer from "../components/Footer";
+import { site } from "../data/site";
+
+const inputClasses =
+  "w-full p-3.5 bg-surface border border-ink/16 rounded-lg focus:outline-none focus:border-terracotta text-[15px]";
+const labelClasses = "block text-sm font-medium text-ink mb-1.5";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    projectDescription: '',
-    addressLine1: '',
-    addressLine2: '',
-    town: '',
-    county: '',
-    eircode: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    projectDescription: "",
+    addressLine1: "",
+    addressLine2: "",
+    town: "",
+    county: "",
+    eircode: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [responseMessage, setResponseMessage] = useState('');
+  const [responseMessage, setResponseMessage] = useState("");
 
-  // Handle input change
   const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -28,98 +34,126 @@ export default function ContactForm() {
     }));
   };
 
-  // Handle form submission
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Example: Sending data to an API route
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
+      const res = await fetch("/api/contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       if (res.ok) {
-        setResponseMessage('Your message has been sent successfully!');
+        setResponseMessage("Your message has been sent successfully!");
         setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          phone: '',
-          projectDescription: '',
-          addressLine1: '',
-          addressLine2: '',
-          town: '',
-          county: '',
-          eircode: '',
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          projectDescription: "",
+          addressLine1: "",
+          addressLine2: "",
+          town: "",
+          county: "",
+          eircode: "",
         });
       } else {
-        setResponseMessage('Something went wrong. Please try again.');
+        setResponseMessage("Something went wrong. Please try again.");
       }
     } catch (error) {
-      setResponseMessage('Error submitting the form. Please try again later.');
+      setResponseMessage("Error submitting the form. Please try again later.");
     }
 
     setIsSubmitting(false);
   };
 
   return (
-    <div className="flex justify-center pt-68">
-      <div className="w-full max-w-3xl p-8 bg-gray-100 rounded-xl shadow-lg">
-        {/* Contact Section Header */}
-        <div className="mb-8 text-center">
-          <h1 className="text-4xl font-serif text-[#355E3B] mb-2">Contact Us</h1>
-          <p className="text-xl font-serif text-gray-600">
-            We would be happy to connect with you and discuss your project!
-          </p>
-          <p className="text-xl text-gray-600 font-serif mb-6">
-            Please provide your contact information and give us some details about your project, and we will reach out.
-          </p>
-          <div>
-            <p className="text-xl text-gray-600 font-serif mb-2">Phone: <strong className='text-teal-800'>087 2504960</strong></p>
-            <p className="text-xl text-gray-600 font-serif mb-2">Email: <strong className='text-teal-800'>info@jmatthewslandscaping.ie</strong></p>
+    <div className="bg-cream">
+      <section className="max-w-[1280px] mx-auto px-6 md:px-16 pt-36 md:pt-44 pb-4 text-center">
+        <span className="block text-[13px] tracking-wide uppercase font-semibold text-terracotta-700 mb-3.5">
+          Get in touch
+        </span>
+        <h1 className="font-display text-4xl md:text-5xl leading-tight mx-auto max-w-[20ch]">
+          Let&rsquo;s talk about your project
+        </h1>
+        <p className="text-base md:text-lg text-ink/75 max-w-[52ch] mx-auto mt-4">
+          Reach out for a free, no-obligation consultation on patios, driveways, garden design and more &mdash; we
+          cover {site.areasServed.join(", ")}.
+        </p>
+      </section>
+
+      <section className="max-w-[1280px] mx-auto px-6 md:px-16 py-10 md:py-14 grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-8 md:gap-14 items-start">
+        <div className="flex flex-col gap-4">
+          <div className="bg-surface rounded-lg p-5 flex gap-3.5 items-start">
+            <div>
+              <div className="text-xs text-ink/60 mb-1">Phone</div>
+              <a href={site.phoneHref} className="text-base font-semibold text-ink">
+                {site.phoneDisplay}
+              </a>
+            </div>
+          </div>
+          <div className="bg-surface rounded-lg p-5 flex gap-3.5 items-start">
+            <div>
+              <div className="text-xs text-ink/60 mb-1">Email</div>
+              <a href={`mailto:${site.email}`} className="text-base font-semibold text-ink">
+                {site.email}
+              </a>
+            </div>
+          </div>
+          <div className="bg-surface rounded-lg p-5">
+            <div className="text-xs text-ink/60 mb-1">Based in</div>
+            <div className="text-base font-semibold text-ink">
+              {site.address.street}, Co. {site.address.region}
+            </div>
+            <div className="text-[13.5px] text-ink/65 mt-1">
+              Serving {site.areasServed.join(", ")}
+            </div>
+          </div>
+          <div className="bg-sage-100 rounded-lg p-5">
+            <div className="text-xs text-ink/65 mb-1">Hours</div>
+            <div className="text-[15px] font-semibold">
+              {site.hours.days}, {site.hours.open} &ndash; {site.hours.close}
+            </div>
           </div>
         </div>
 
-        {/* Response Message */}
-        {responseMessage && (
-          <div className="mb-6 p-4 text-center text-white bg-green-500 rounded-md">{responseMessage}</div>
-        )}
-
-        <form onSubmit={handleSubmit}>
-          {/* Form Fields */}
-          <div className="mb-6">
-            <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
-              required
-              className="w-full p-4 border bg-white border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#355E3B] focus:border-[#355E3B] text-lg"
-            />
+        <form
+          onSubmit={handleSubmit}
+          className="bg-surface rounded-[calc(var(--radius-lg)*1.15)] p-6 md:p-10 flex flex-col gap-4.5"
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label htmlFor="firstName" className={labelClasses}>First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
+                required
+                className={inputClasses}
+              />
+            </div>
+            <div>
+              <label htmlFor="lastName" className={labelClasses}>Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                required
+                className={inputClasses}
+              />
+            </div>
           </div>
 
-          <div className="mb-6">
-            <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              required
-              className="w-full p-4 border bg-white border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#355E3B] focus:border-[#355E3B] text-lg"
-            />
-          </div>
-
-          <div className="mb-6">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+          <div>
+            <label htmlFor="email" className={labelClasses}>Email</label>
             <input
               type="email"
               id="email"
@@ -127,12 +161,12 @@ export default function ContactForm() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full p-4 border bg-white border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#355E3B] focus:border-[#355E3B] text-lg"
+              className={inputClasses}
             />
           </div>
 
-          <div className="mb-6">
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+          <div>
+            <label htmlFor="phone" className={labelClasses}>Phone Number</label>
             <input
               type="tel"
               id="phone"
@@ -140,24 +174,25 @@ export default function ContactForm() {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="w-full p-4 border bg-white border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#355E3B] focus:border-[#355E3B] text-lg"
+              className={inputClasses}
             />
           </div>
 
-          <div className="mb-6">
-            <label htmlFor="projectDescription" className="block text-sm font-medium text-gray-700 mb-2">Project Description</label>
+          <div>
+            <label htmlFor="projectDescription" className={labelClasses}>Project Description</label>
             <textarea
               id="projectDescription"
               name="projectDescription"
               value={formData.projectDescription}
               onChange={handleChange}
               required
-              className="w-full p-4 border bg-white border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#355E3B] focus:border-[#355E3B] text-lg"
+              rows={4}
+              className={inputClasses}
             />
           </div>
 
-          <div className="mb-6">
-            <label htmlFor="addressLine1" className="block text-sm font-medium text-gray-700 mb-2">Address Line 1</label>
+          <div>
+            <label htmlFor="addressLine1" className={labelClasses}>Address Line 1</label>
             <input
               type="text"
               id="addressLine1"
@@ -165,70 +200,77 @@ export default function ContactForm() {
               value={formData.addressLine1}
               onChange={handleChange}
               required
-              className="w-full p-4 border bg-white border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#355E3B] focus:border-[#355E3B] text-lg"
+              className={inputClasses}
             />
           </div>
 
-          <div className="mb-6">
-            <label htmlFor="addressLine2" className="block text-sm font-medium text-gray-700 mb-2">Address Line 2</label>
+          <div>
+            <label htmlFor="addressLine2" className={labelClasses}>Address Line 2</label>
             <input
               type="text"
               id="addressLine2"
               name="addressLine2"
               value={formData.addressLine2}
               onChange={handleChange}
-              className="w-full p-4 border bg-white border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#355E3B] focus:border-[#355E3B] text-lg"
+              className={inputClasses}
             />
           </div>
 
-          <div className="mb-6">
-            <label htmlFor="town" className="block text-sm font-medium text-gray-700 mb-2">Town</label>
-            <input
-              type="text"
-              id="town"
-              name="town"
-              value={formData.town}
-              onChange={handleChange}
-              required
-              className="w-full p-4 border bg-white border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#355E3B] focus:border-[#355E3B] text-lg"
-            />
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+              <label htmlFor="town" className={labelClasses}>Town</label>
+              <input
+                type="text"
+                id="town"
+                name="town"
+                value={formData.town}
+                onChange={handleChange}
+                required
+                className={inputClasses}
+              />
+            </div>
+            <div>
+              <label htmlFor="county" className={labelClasses}>County</label>
+              <input
+                type="text"
+                id="county"
+                name="county"
+                value={formData.county}
+                onChange={handleChange}
+                required
+                className={inputClasses}
+              />
+            </div>
+            <div>
+              <label htmlFor="eircode" className={labelClasses}>Eircode</label>
+              <input
+                type="text"
+                id="eircode"
+                name="eircode"
+                value={formData.eircode}
+                onChange={handleChange}
+                required
+                className={inputClasses}
+              />
+            </div>
           </div>
 
-          <div className="mb-6">
-            <label htmlFor="county" className="block text-sm font-medium text-gray-700 mb-2">County</label>
-            <input
-              type="text"
-              id="county"
-              name="county"
-              value={formData.county}
-              onChange={handleChange}
-              required
-              className="w-full p-4 border bg-white border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#355E3B] focus:border-[#355E3B] text-lg"
-            />
-          </div>
+          {responseMessage && (
+            <div className="p-3.5 text-center text-sm rounded-lg bg-sage-100 text-sage-800">
+              {responseMessage}
+            </div>
+          )}
 
-          <div className="mb-6">
-            <label htmlFor="eircode" className="block text-sm font-medium text-gray-700 mb-2">Eircode</label>
-            <input
-              type="text"
-              id="eircode"
-              name="eircode"
-              value={formData.eircode}
-              onChange={handleChange}
-              required
-              className="w-full p-4 border bg-white border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#355E3B] focus:border-[#355E3B] text-lg"
-            />
-          </div>
-
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full py-3 px-6 bg-[#355E3B] text-white font-semibold rounded-md hover:bg-[#2d4d34] disabled:bg-gray-400 text-lg"
-          >
-            {isSubmitting ? 'Submitting...' : 'Submit'}
-          </button>
+          <Button type="submit" disabled={isSubmitting} className="w-full">
+            {isSubmitting ? "Submitting..." : "Send Enquiry"}
+          </Button>
+          <p className="text-xs text-ink/60 text-center">
+            We&rsquo;ll get back to you within one working day.
+          </p>
         </form>
-      </div>
+      </section>
+
+      <Footer />
     </div>
   );
 }

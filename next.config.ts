@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { projects } from "./app/data/projects";
 
 const nextConfig: NextConfig = {
   eslint: {
@@ -8,6 +9,15 @@ const nextConfig: NextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true,
+  },
+  async redirects() {
+    return projects.flatMap((project) =>
+      project.legacyPaths.map((legacyPath) => ({
+        source: legacyPath,
+        destination: `/projects/${project.slug}`,
+        permanent: true,
+      }))
+    );
   },
 };
 

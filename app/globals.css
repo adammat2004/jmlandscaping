@@ -1,9 +1,88 @@
 @import "tailwindcss";
 
-html, body {
-    background-color: #E8E8E8;
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-    font-family: 'Your Preferred Font', sans-serif; /* Optional, sets a global font */
-    min-height: 100%; /* Ensures the body covers the full height of the screen */
+@theme {
+  /* Ground / ink — "Organic" design system */
+  --color-cream: #f5ead8;
+  --color-surface: #ebddc5;
+  --color-ink: #201e1d;
+
+  /* Neutral ramp — used for the footer and low-emphasis surfaces */
+  --color-neutral-100: #f9f4ed;
+  --color-neutral-200: #eee7db;
+  --color-neutral-300: #dcd3c4;
+  --color-neutral-400: #c0b6a5;
+  --color-neutral-500: #a19786;
+  --color-neutral-600: #82796a;
+  --color-neutral-700: #645c50;
+  --color-neutral-800: #474238;
+  --color-neutral-900: #2e2b25;
+
+  /* Terracotta — primary accent. Base is a standalone brand value, not a ramp step. */
+  --color-terracotta: #c67139;
+  --color-terracotta-100: #fff2eb;
+  --color-terracotta-200: #ffe1d0;
+  --color-terracotta-300: #ffc6a5;
+  --color-terracotta-400: #f6a06b;
+  --color-terracotta-500: #d67f48;
+  --color-terracotta-600: #b2622d;
+  --color-terracotta-700: #8c491a;
+  --color-terracotta-800: #643312;
+  --color-terracotta-900: #402310;
+
+  /* Sage — secondary accent. Base is a standalone brand value, not a ramp step. */
+  --color-sage: #7a8a5e;
+  --color-sage-100: #f0fae1;
+  --color-sage-200: #e1eecc;
+  --color-sage-300: #ccdbb2;
+  --color-sage-400: #aebf92;
+  --color-sage-500: #8fa073;
+  --color-sage-600: #728157;
+  --color-sage-700: #56633f;
+  --color-sage-800: #3d472b;
+  --color-sage-900: #272e1b;
+
+  /* Type */
+  --font-display: var(--font-caprasimo), "Caprasimo", serif;
+  --font-body: var(--font-figtree), "Figtree", sans-serif;
+
+  /* Radii — over-rounded per the design system */
+  --radius-md: 16px;
+  --radius-lg: 28px;
+
+  /* Elevation — soft, ink-tinted shadows tuned for the cream ground */
+  --shadow-organic-sm: 0 1px 2px color-mix(in srgb, #2e2b25 14%, transparent);
+  --shadow-organic-md: 0 3px 10px color-mix(in srgb, #2e2b25 16%, transparent);
+  --shadow-organic-lg: 0 12px 32px color-mix(in srgb, #2e2b25 22%, transparent);
+}
+
+@utility washed {
+  filter: saturate(0.6) contrast(0.85) brightness(1.1) opacity(0.94);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-terracotta);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-terracotta) 30%, transparent);
 }

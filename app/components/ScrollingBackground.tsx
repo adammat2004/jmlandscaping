@@ -32,7 +32,7 @@ export default function ScrollingBackground() {
   }, []);
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-[min(86vh,860px)] min-h-[520px] w-full overflow-hidden">
       {images.map((src, i) => (
         <Image
           key={i}
@@ -42,17 +42,14 @@ export default function ScrollingBackground() {
           sizes="100vw"
           priority={i === 0}
           className={`
-            object-cover absolute top-0 left-0 
+            washed object-cover absolute top-0 left-0
             transition-opacity duration-1000 ease-in-out
             ${i === currentImageIndex ? 'opacity-100' : 'opacity-0'}
           `}
         />
       ))}
 
-      <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-        {/* Optional overlay content here */}
-        {/* <h1 className="text-white text-4xl font-bold">Joe Matthews Landscaping & Paving</h1> */}
-      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-ink/15 to-ink/68" />
     </div>
   );
 }
