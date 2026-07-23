@@ -57,8 +57,8 @@ export const projects: Project[] = [
     },
     video: { src: "/newjob/waterfall_vid.mp4" },
     gallery: [
-      { src: "/newjob/pic_9.jpg", alt: "Granite patio and tiered garden beds at Collinstown, Westmeath" },
-      { src: "/newjob/pic_4.jpg", alt: "Natural stone waterfall feature with landscaping in Collinstown, Westmeath" },
+      { src: "/newjob/pic_9.jpg", alt: "Natural stone waterfall feature with enclosed seating area" },
+      { src: "/newjob/pic_4.jpg", alt: "Tiered garden beds with landscaping in Collinstown, Westmeath" },
       { src: "/newjob/pic_5.jpg", alt: "Walled circular patio and water feature landscaping in Collinstown, Westmeath" },
       { src: "/newjob/pic_7.jpg", alt: "Front entrance paving and landscaping in Collinstown, Westmeath" },
       { src: "/newjob/pic_1.jpg", alt: "Lawns and kerbing at Collinstown, Westmeath" },
